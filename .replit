@@ -1,6 +1,6 @@
 compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
 run = "java -classpath .:target/dependency/* JavaIntro"
-hidden = ["**/*.class", "PlacementQuiz.java", "BeginnerCourse.java", ".settings", ".classpath", ".project", "HelperFunctions.java", "pom.xml", "target"]
+hidden = ["**/*.class", "PlacementQuiz.java", "BeginnerCourse.java", ".settings", ".classpath", ".project", "HelperFunctions.java", "pom.xml", "target", "ProgressLoader.java", "userProgress.json"]
 
 [packager]
 language = "java"

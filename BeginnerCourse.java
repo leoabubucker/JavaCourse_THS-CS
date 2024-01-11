@@ -4,7 +4,7 @@ public class BeginnerCourse {
   private static final Scanner CONSOLE = new Scanner(System.in);
   private static String userInput;
 
-  private static void learnPrinting() {
+  public static void learnPrinting() {
     HelperFunctions.printAnimated(
         "Let's look at a fundamental aspect of all programming languages, printing to the console! Open 'printing.java' in the 'BeginnerCourse' folder to get started!'");
 
@@ -35,7 +35,7 @@ public class BeginnerCourse {
     learnVariables();
   }
   
-  private static void learnVariables() {
+  public static void learnVariables() {
     HelperFunctions.printAnimated("Another key concept in programming is variables. Variables are used to store values in memory. Think of a program where we need to remember a user's name; we can use a variable. What about if we also need to store a user's age; We can use another variable.");
 
     HelperFunctions.printAnimated("In Java, variables must be defined based on what type of value they will store. For example, we would want a variable type that can store letters to store a user's name!");
@@ -48,7 +48,8 @@ public class BeginnerCourse {
     
 //added by Daksh note: idk what the quiz is gonna cover and im assuming it covers how to initialize variables
   HelperFunctions.printAnimated("As you already know, the type of variable must be defined before the variable name. For example:\n int age = 16;/n We have now created a variable called 'age' that can only store whole numbers and currently stores the value 16/n. If we need to acces the value of that varibale we can simply do so by typing 'age' without quotes. For example:\n System.out.println(age);/n This will print the value of 16 to the console. Another important detail regarding variables is that the '=' sign is used to assign a value to a variable. Unlike math it does not mean 'equals' but rather 'assign'\n. So, in the example above, we are assigning the value 16 to 'age' rather than setting 'age' equal to 16. This is called 'initializing' a variable. This is somewhat of a confusing concept so its fine if you dont' understand it completly\n.");
-
+  }
+public static void learnVariableManipulation(){
   HelperFunctions.printAnimated("Now that you know how to create and use variables to store values, to move on to the next topic: Variable Manipulation\n ");
 
   HelperFunctions.printAnimated("Variable Manipulation is all about the different ways we can change the values being strored by a variable. Changing values is the other main use of variables other than storing values.\n If we have a variable that is used to keep track of the player score we will need to constantly be chaning the value of the variable. First define an int called 'playerScore' and assign it a value of 0:\n ");
@@ -60,12 +61,6 @@ public class BeginnerCourse {
   HelperFunctions.waitForCorrectInput("ok", "Type 'ok when you're read to continue!",false);
 
   HelperFunctions.printAnimated("We can also multiply or divide the value of a variable. For example:\n playerScore *= 2;\n will multiply the value of 'playerScore' by 2 and:/n playerScore /= 2;\n will divide the value of 'playerScore' by 2");
-
-    
-
-    
-    
-
 
   }
   public static void launchBeginnerCourse() {

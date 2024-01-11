@@ -7,7 +7,7 @@ public class HelperFunctions{
     for(int i = 0; i < initStr.length(); i++){
       System.out.print(initStr.charAt(i));
       try{
-        TimeUnit.MILLISECONDS.sleep(50);
+        TimeUnit.MILLISECONDS.sleep(25);
       }
       catch(InterruptedException e){
         e.printStackTrace();

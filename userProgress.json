@@ -1,0 +1,26 @@
+{"courses": [
+  {"name":"Intro", "status":"unlocked"};
+  {"name":"Beginner Course", "status":"locked"},
+  {"name":"Intermediate Course", "status":"locked"},
+  {"name":"Advanced Course", "status":"locked"}
+]}
+
+{"activities": [
+  {"name":"Placement", "course":"Intro", "status":"unlocked"},
+  {"name":"Printing", "course":"Beginner Course", "status":"locked"},
+  {"name":"Variable Types", "course":"Beginner Course", "status":"locked"},
+  {"name":"Variable Manipulation", "course":"Beginner Course", "status":"locked"},
+  {"name":"Activity 1", "course":"Intermediate Course", "status":"locked"},
+  {"name":"Activity 2", "course":"Intermediate Course", "status":"locked"},
+  {"name":"Activity 3", "course":"Intermediate Course", "status":"locked"},
+  {"name":"Activity 1", "course":"Advanced Course", "status":"locked"},
+  {"name":"Activity 2", "course":"Advanced Course", "status":"locked"},
+  {"name":"Activity 3", "course":"Advanced Course", "status":"locked"}
+]}
+
+{"assignments": [
+  {"name":"Placement Quiz", "activity":"Placement", "score":"0", "maxScore": "15"},
+  {"name":"Printing Quiz", "activity":"Printing", "score":"0", "maxScore": "1"},
+  {"name":"Variable Types Quiz", "activity":"Variable Types", "score":"0", "maxScore": "5"},
+  {"name":"Variable Manipulation Quiz", "activity":"Variable Manipulation", "score":"0", "maxScore": "5"}
+]}
