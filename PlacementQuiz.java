@@ -1,9 +1,9 @@
 import java.util.Scanner;
-import java.io.File;
-import java.util.List;
 public class PlacementQuiz{
+  
   private static final Scanner CONSOLE = new Scanner(System.in);
-  private static final List<String> questions = List.of(
+  
+  private static final String[] questions = {
       "Question 1: What is the keyword used to print something to the console?",
     "Question 2: What is the data type for whole numbers in Java?", 
     "Question 3: What is the result of 9 % 4?",
@@ -19,9 +19,9 @@ public class PlacementQuiz{
     "Question 13: Can we overload the main method in Java?",
     "Question 14: Which operator is used to check reference or address of a variable in Java?",
     "Question 15: What is the result of (10 * 2)/5 + 5 - 1?"
-    );
-  private static final List<String> choices = List.of
-  (
+  };
+  
+  private static final String[] choices = {
     "A. display B. system.out.println C. print D. console.log",
     "A. int B. double C. string D. boolean",
     "A. 2 B. 3 C. 4 D. 1",
@@ -37,20 +37,22 @@ public class PlacementQuiz{
     "A. Yes B. No",
     "A. & B. * C. % D. !",
     "A. 4 B. 5 C. 8 D. 7"
-    );
-  private static final List<String> answers = List.of
-  (
+  };
+  
+  private static final String[] answers = {
     "B", "A", "D", "C", "C", "A", "B", "A", "B", "C", "A", "C", "A", "A", "C"
-  );
+  };
+  
   private static int correctAnswers = 0;
+  
   public static void placeUser(){
     HelperFunctions.clearConsole();
     HelperFunctions.printAnimated("Welcome to the placement quiz! This short quiz consists of a total of 15 questions (5 easy, 5 intermediate, and 5 advanced) and will help place you in a path!");
-    for(int i = 0; i < questions.size(); i++){
-      HelperFunctions.printAnimated(questions.get(i));
-      HelperFunctions.printAnimated(choices.get(i) + "\n");
+    for(int i = 0; i < questions.length; i++){
+      HelperFunctions.printAnimated(questions[i]);
+      HelperFunctions.printAnimated(choices[i] + "\n");
       String userSelection = CONSOLE.nextLine();
-      if(userSelection.equalsIgnoreCase(answers.get(i))){
+      if(HelperFunctions.validateUserInput(userSelection, answers[i], false, true)){
         correctAnswers += 1;
         HelperFunctions.printAnimated("Correct!");
       }
@@ -64,18 +66,26 @@ userSelection.equalsIgnoreCase("d")){
         i -= 1;
       }
     }
-    HelperFunctions.printAnimated("You got " + correctAnswers + " out of " + questions.size() + " questions correct! (" + HelperFunctions.truncateDecimal(Double.valueOf(correctAnswers), 2)/questions.size()*100 + "%)" );
-    if(correctAnswers == questions.size()){
+    HelperFunctions.printAnimated("You got " + correctAnswers + " out of " + (questions.length) + " questions correct! (" + HelperFunctions.truncateDecimal(Double.valueOf(correctAnswers), 2)/(questions.length)*100 + "%)" );
+    if(correctAnswers == questions.length){
       HelperFunctions.printAnimated("Congratulations! You got a perfect score! Loading the advanced course now...");
       HelperFunctions.sleep(1, "sec");
+      HelperFunctions.updateProgress("courseProgress.txt", "advanced");
+      HelperFunctions.updateProgress("activityProgress.txt", "advancedIntro");
+      AdvancedCourse.launchAdvancedCourse();
     }
-    else if(correctAnswers >= (questions.size()/4) * 3){
+    else if(correctAnswers >= (questions.length/4.0) * 3.0){
       HelperFunctions.printAnimated("Congratulations! You have been placed in the intermediate course! Loading the course now...");
       HelperFunctions.sleep(1, "sec");
+      HelperFunctions.updateProgress("courseProgress.txt", "intermediate");
+      HelperFunctions.updateProgress("activityProgress.txt", "intermediateIntro");
+      IntermediateCourse.launchIntermediateCourse();
     }
     else{
       HelperFunctions.printAnimated("Welcome to programming! You have been placed in the beginner course. Loading the course now...");
       HelperFunctions.sleep(1, "sec");
+      HelperFunctions.updateProgress("courseProgress.txt", "beginner");
+      HelperFunctions.updateProgress("activityProgress.txt", "beginnerIntro");
       BeginnerCourse.launchBeginnerCourse();
     }
   }

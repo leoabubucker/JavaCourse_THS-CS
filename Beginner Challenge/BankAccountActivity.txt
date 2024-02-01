@@ -1,0 +1,5 @@
+Go to: https://replit.com/@leoA5802/BankAccountActivity?v=1#Main.java
+
+Fork the repl and complete the activity!
+
+Remember, type "javac Main.java" to compile you code and "java Main" in the shell to run the program

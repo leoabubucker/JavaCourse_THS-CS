@@ -1,6 +1,6 @@
 public class VariableManipulation {
   public static void main(String[] args){
-    //numbers 
+  
     int playerScore = 0; //declares a variable 'playerScore' and assigns it a value of 0
     
     playerScore = 10; //reassigns the value of 'playerScore' to 10
@@ -15,13 +15,11 @@ public class VariableManipulation {
 
     playerScore -= 10; //removes 10 from the value of 'playerScore'
 
-    //strings 
-    String username = "Jaeyun"; //declares a string 'userName' and assigns it "Jaeyun"
+    //++ and -- are only used when adding or subtracting 1 from a variable, for other values use += or -=
 
-    username = "Magyar"; 
+    playerScore *= 10; //multiplies the value of 'playerScore' by 10
 
-    username += "is fun to play";
-
+    playerScore /= 10; //divides the value of 'playerScore' by 10
     
   }
 
