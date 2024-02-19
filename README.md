@@ -1,12 +1,27 @@
-# THS_CompSci_Club
-Repository for the Towson High School Computer Science Olympiad Club
+![Static Badge](https://img.shields.io/badge/Course-blue) ![Static Badge](https://img.shields.io/badge/Beginner-green) ![Static Badge](https://img.shields.io/badge/Intermediate-orange) ![Static Badge](https://img.shields.io/badge/Advanced-red)
 
-Open the JavaIntro.java folder and click the green "Run" button to run the program
-or go to the shell and run "javac PlacementQuiz.java HelperFunctions.java BeginnerCourse.java IntermediateCourse.java AdvancedCourse.java JavaIntro.java" and then "java JavaIntro" (recommended) 
+# Dynamic Java Course
+A command-line based Java course coded in Java that will teach you Java at a beginner, intermediate, or advanced level. 
 
-Notes: 
-1. Click on the console to the right of the screen when the program asks you for input
-2. Answer MCQ's using either 'a', 'b', 'c' or 'd'
-3. Most answers on the quizzes are case specific
-4. Notes for each course are available in their respetive folders (for ex. beginner course notes are available in the 'Beginner Course' folder)
+## Features
+ - Colored Text
+ - Quizzes and Activities
+ - Save System
 
+## Usage
+```bash
+javac *.java
+java JavaIntro
+```
+
+## Tips
+- Answer MCQ's using either 'a', 'b', 'c' or 'd'
+- Most user input is case specific.
+- Notes for each course are available in their respetive folders (for ex. beginner course notes are available in the 'Beginner Course' folder)
+  
+## Contributors
+- Leo Abubucker (Creator)
+- Daksh Sangar (Contributor)
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
