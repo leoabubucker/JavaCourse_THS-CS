@@ -167,6 +167,7 @@ public class BeginnerCourse {
     return score; 
     
   }
+  
 
   public static void launchBeginnerCourse() {
     HelperFunctions.clearConsole();
@@ -175,4 +176,5 @@ public class BeginnerCourse {
     HelperFunctions.updateProgress("activityProgress.txt", "learnPrinting");
     learnPrinting();
   }
+
 }

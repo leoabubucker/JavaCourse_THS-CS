@@ -1,0 +1,11 @@
+Go back to your Bank Account activity from the beginner Course
+(https://replit.com/ and check recent repls if you cannot find it)
+
+Add the following to the activity: 
+
+1. Add at least 1 if statement to the code that changes a variable 
+2. Add an else and else if statement to the code 
+3. Use operators such as (||, &&, ==) on at least one of the conditionals
+
+
+Remember, type "javac Main.java" to compile you code and "java Main" in the shell to run the program

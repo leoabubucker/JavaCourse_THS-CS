@@ -41,6 +41,9 @@ public class HelperFunctions{
       add("intermediateIntro");
       add("learnOperators");
       add("learnConditionals");
+      add("learnMethods");
+      add("learnMethodParameters");
+      add("learnMethodReturn");
     }
   };
 
@@ -334,6 +337,14 @@ public class HelperFunctions{
             HelperFunctions.printAnimated("Launching the conditionals activity now!");
             sleep(1, "sec");
             IntermediateCourse.learnConditionals();
+          }else if(userInput.equalsIgnoreCase("learnmethods")){
+            HelperFunctions.printAnimated("Launching the methods activity now!");
+            sleep(1, "sec");
+            IntermediateCourse.learnMethods();
+          }else if(userInput.equalsIgnoreCase("learnmethodparameters")){
+            HelperFunctions.printAnimated("Launching the method parameters activity now!");
+            sleep(1, "sec");
+            IntermediateCourse.learnMethodParameters();
           }
         }
         else if(intermediateActivities.contains(userInput)){
