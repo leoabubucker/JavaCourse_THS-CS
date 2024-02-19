@@ -14,6 +14,11 @@ javac *.java
 java JavaIntro
 ```
 
+## Non-Replit Usage
+WARNING - This project has only been tested in Replit. Using other IDEs may have undesired effects.
+1. Delete the following replit-specific files/folders: ".settings", "target/dependency", ".breakpoints", ".classpath", ".project", ".replit", "pom.xml", "replit.nix"
+2. Follow Usage Instructions
+
 ## Tips
 - Answer MCQ's using either 'a', 'b', 'c' or 'd'
 - Most user input is case specific.
