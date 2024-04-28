@@ -43,7 +43,11 @@ public class HelperFunctions{
       add("learnConditionals");
       add("learnMethods");
       add("learnMethodParameters");
-      add("learnMethodReturn");
+      add("learnReturnStatements");
+      add("learnStringMethods");
+      add("learnArrays");
+      add("learnSplitAndSubstring");
+      add("learnLoops");
     }
   };
 
@@ -341,10 +345,26 @@ public class HelperFunctions{
             HelperFunctions.printAnimated("Launching the methods activity now!");
             sleep(1, "sec");
             IntermediateCourse.learnMethods();
-          }else if(userInput.equalsIgnoreCase("learnmethodparameters")){
+          }else if (userInput.equalsIgnoreCase("learnmethodparameters")){
             HelperFunctions.printAnimated("Launching the method parameters activity now!");
             sleep(1, "sec");
             IntermediateCourse.learnMethodParameters();
+          }else if (userInput.equalsIgnoreCase("learnreturnstatements")){
+            HelperFunctions.printAnimated("Launching the return statements activity now!");
+            sleep(1, "sec");
+            IntermediateCourse.learnReturnStatements();
+          }else if (userInput.equalsIgnoreCase("learnStringMethods")){
+            HelperFunctions.printAnimated("Launching the string methods activity now!");
+            sleep(1, "sec");
+            IntermediateCourse.learnStringMethods();
+          }else if (userInput.equalsIgnoreCase("learnArrays")){
+            HelperFunctions.printAnimated("Launching the arrays activity now!");
+            sleep(1, "sec");
+            IntermediateCourse.learnArrays();
+          }else if (userInput.equalsIgnoreCase("learnSplitAndSubstring")){
+            HelperFunctions.printAnimated("Launching the split and substring activity now!");
+            sleep(1, "sec");
+            IntermediateCourse.learnSplitandSubstring();
           }
         }
         else if(intermediateActivities.contains(userInput)){

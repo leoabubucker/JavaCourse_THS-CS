@@ -1,6 +1,6 @@
-Go back to your Bank Account activity from the beginner Course
+Go back to your Bank Account activity from the conditionals activity 
 (https://replit.com/ and check recent repls if you cannot find it, its called 'BankAccountActivity_THS-CS')
 
-1. Complete part 2 of the activity
+1. Complete part 3 of the activity
 
 Remember, type "javac Main.java" to compile you code and "java Main" in the shell to run the program

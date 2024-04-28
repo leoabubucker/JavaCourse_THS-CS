@@ -6,7 +6,7 @@ A command-line based Java course coded in Java that will teach you Java at a beg
 ## Features
  - Colored Text
  - Quizzes and Activities
- - Save System
+ - Save System 
 
 ## Usage
 ```bash

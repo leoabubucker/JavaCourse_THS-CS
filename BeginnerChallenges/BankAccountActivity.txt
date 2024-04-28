@@ -1,5 +1,5 @@
-Go to: https://replit.com/@leoA5802/BankAccountActivity?v=1#Main.java
+Go to: https://replit.com/@leoA5802/BankAccountActivityTHS-CS?from=notifications#README.md
 
-Fork the repl and complete the activity!
+Fork the repl and complete the part 1 of the activity!
 
 Remember, type "javac Main.java" to compile you code and "java Main" in the shell to run the program

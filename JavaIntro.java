@@ -3,8 +3,8 @@
 /*        Intro to Java - THS Comp Sci Olympiad       */
 /*                                                    */
 /*    Press the big green "Run" button!               */
-/*    Created by Leo Abubucker - Club Co-Founder      */
-/*                                                    */
+/*    Created by Leo Abubucker - Club Co-Founder     */
+/*    Contributor: Daksh Sangar - Club Co-Founder                                                */
 /*----------------------------------------------------*/
 import java.util.concurrent.TimeUnit;
 import java.util.Scanner;
@@ -18,7 +18,7 @@ public class JavaIntro {
     HelperFunctions.printAnimated(
         "Hello and welcome to the Intro Java Crash Course, for "
             + "THS Computer Science Olympiad Club created by Leo "
-            + "Abubucker!");
+            + "Abubucker and Daksh Sangar!");
     HelperFunctions.sleep(500, "msec");
       HelperFunctions.printAnimated(
         "\nThis crash course will teach you the basics of Java, and "
