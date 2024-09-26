@@ -47,7 +47,9 @@ public class HelperFunctions{
       add("learnStringMethods");
       add("learnArrays");
       add("learnSplitAndSubstring");
-      add("learnLoops");
+      add("learnWhileLoops");
+      add("learnForLoops");
+      add("learnClassesAndObjects");
     }
   };
 
@@ -365,6 +367,18 @@ public class HelperFunctions{
             HelperFunctions.printAnimated("Launching the split and substring activity now!");
             sleep(1, "sec");
             IntermediateCourse.learnSplitandSubstring();
+          }else if (userInput.equalsIgnoreCase("learnWhileLoops")){
+            HelperFunctions.printAnimated("Launching the loops activity now!");
+            sleep(1, "sec");
+            IntermediateCourse.learnWhileLoops();
+          }else if (userInput.equalsIgnoreCase("learnForLoops")){
+            HelperFunctions.printAnimated("Launching the loops activity now!");
+            sleep(1, "sec");
+            IntermediateCourse.learnForLoops();
+          }else if (userInput.equalsIgnoreCase("learnClassesAndObjects")){
+            HelperFunctions.printAnimated("Launching the classes and objects activity now!");
+            sleep(1, "sec");
+            IntermediateCourse.learnClassesAndObjects();
           }
         }
         else if(intermediateActivities.contains(userInput)){

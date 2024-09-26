@@ -1,8 +1,10 @@
+import java.util.Arrays;
+
 public class StringMethods{
 
   public static void main(String[] args)
   {
-    //String methods examples: equals, equalsIgnoreCase, length, toUpperCase, toLowerCase, charAt, indexOf, isEmpty, trim, replace
+    //String methods examples: equals, equalsIgnoreCase, length, toUpperCase, toLowerCase, charAt, indexOf, isEmpty, trim, replace, split, substring
 
     
     String str1 = "hello";
@@ -39,5 +41,16 @@ public class StringMethods{
     // replace
     String str4 = "Welcome to Java";
     System.out.println(str4.replace('o', '0'));  // Welc0me t0 Java
+    
+    //substring
+    String str = "Hello, World!";
+    String substr = str.substring(7, 12);
+    System.out.println(substr); // World
+
+    //split 
+    String str5 = "apple, banana, orange";
+    String[] fruits = str5.split(",");
+    System.out.println(Arrays.toString(fruits)); //apple banana orange
+
   }
 }
