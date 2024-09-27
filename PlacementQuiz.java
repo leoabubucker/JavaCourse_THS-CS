@@ -72,7 +72,7 @@ userSelection.equalsIgnoreCase("d")){
       HelperFunctions.sleep(1, "sec");
       HelperFunctions.updateProgress("courseProgress.txt", "advanced");
       HelperFunctions.updateProgress("activityProgress.txt", "advancedIntro");
-      AdvancedCourse.launchAdvancedCourse();
+      //AdvancedCourse.launchAdvancedCourse();
     }
     else if(correctAnswers >= (questions.length/4.0) * 3.0){
       HelperFunctions.printAnimated("Congratulations! You have been placed in the intermediate course! Loading the course now...");
