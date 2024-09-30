@@ -22,7 +22,7 @@ WARNING - This project has only been tested in Replit. Using other IDEs may have
 ## Tips
 - Answer MCQ's using either 'a', 'b', 'c' or 'd'
 - Most user input is case specific.
-- Notes for each course are available in their respetive folders (for ex. beginner course notes are available in the 'Beginner Course' folder)
+- Notes for each course are available in their respective folders (for ex. beginner course notes are available in the 'Beginner Course' folder)
   
 ## Contributors
 - Leo Abubucker (Creator)
