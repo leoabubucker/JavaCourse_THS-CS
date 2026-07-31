@@ -32,6 +32,7 @@ WARNING - This project has only been tested in Replit. Using other IDEs may have
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
 Copyright (c) 2024-2025 Leo Abubucker
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
